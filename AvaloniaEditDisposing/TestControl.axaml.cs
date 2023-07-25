@@ -13,6 +13,8 @@ public partial class TestControl : UserControl
         InitializeComponent();
         
         _installation = Editor.InstallTextMate(new RegistryOptions(ThemeName.DarkPlus));
+
+        // TODO: Comment this out
         _installation.SetGrammar("source.yaml");
     }
 
